@@ -69,7 +69,7 @@
                 <i data-lucide="shield-check" class="w-10 h-10 text-white"></i>
             </div>
             <h2 class="text-3xl font-syne font-bold mb-2 uppercase tracking-tighter">SELAMAT DATANG</h2>
-            <p class="text-gray-500 text-sm mb-8 italic">Silakan masuk untuk melihat arsip za.studios</p>
+            <p class="text-gray-500 text-sm mb-8 italic">Silakan masuk untuk melihat karya za.studios</p>
             
             <div class="space-y-4">
                 <div id="loginChoice" class="flex gap-4">
@@ -105,13 +105,13 @@
     <section id="home" class="min-h-screen flex items-center justify-center pt-32 pb-20 px-6 relative">
         <div class="max-w-7xl mx-auto text-center z-10">
             <div class="inline-block glass px-4 py-2 rounded-full mb-8 border-blue-500/30">
-                <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-blue-400">Arsip Visual 2024 - 2026</span>
+                <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-blue-400">Karya Visual 2024 - 2026</span>
             </div>
             <h1 class="text-6xl md:text-[140px] font-800 mb-8 tracking-tighter leading-[0.85] font-syne uppercase">
                 Beyond <br/> The <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-white italic">Pixels.</span>
             </h1>
             <p class="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                Senang melihat Anda di sini, <span id="welcomeName" class="text-white font-bold">Kawan</span>. Jelajahi evolusi desain saya dari bangku sekolah hingga dunia profesional.
+                Senang melihat Anda di sini, <span id="welcomeName" class="text-white font-bold">Kawan</span>. Jelajahi evolusi desain saya dari bangku sekolah hingga dunia personal.
             </p>
         </div>
     </section>
@@ -126,10 +126,10 @@
                 </div>
                 <div class="flex flex-wrap gap-2" id="filterContainer">
                     <button class="filter-btn active px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="all">Semua</button>
-                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="grade10">Kelas 10</button>
-                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="grade11">Kelas 11</button>
-                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="grade12">Kelas 12</button>
-                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="freelance">Freelance</button>
+                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="kelas10">Kelas 10</button>
+                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="kelas11">Kelas 11</button>
+                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="kelas12">Kelas 12</button>
+                    <button class="filter-btn px-6 py-3 rounded-xl border border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] transition-all" data-filter="personal">Personal</button>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectGrid"></div>
@@ -299,12 +299,15 @@
             // Kelas 11
             { id: 4, title: "Arcana Brand Identity", category: "grade11", img: "https://images.unsplash.com/photo-1634942537034-2531766767d7?q=80&w=800", likes: 42, desc: "Sebuah proyek identitas visual untuk merk fiktif. Fokus pada sistem grid dan bagaimana logo tetap terbaca dalam ukuran sekecil apapun." },
             { id: 5, title: "Swiss Poster Design", category: "grade11", img: "https://images.unsplash.com/photo-1572044162444-ad60f128bde2?q=80&w=800", likes: 31, desc: "Penghormatan untuk gaya International Typographic. Mengutamakan objektivitas, keterbacaan, dan struktur grid yang sangat ketat." },
+            { id: 6, title: "Swiss Poster Design", category: "grade11", img: "https://images.unsplash.com/photo-1572044162444-ad60f128bde2?q=80&w=800", likes: 31, desc: "Penghormatan untuk gaya International Typographic. Mengutamakan objektivitas, keterbacaan, dan struktur grid yang sangat ketat." },
             // Kelas 12
-            { id: 6, title: "Synthwave Mobile UI", category: "grade12", img: "https://images.unsplash.com/photo-1614850523296-e8c0a4ef336b?q=80&w=800", likes: 89, desc: "Eksplorasi antarmuka aplikasi pemutar musik dengan tema retro-futuristik. Menggunakan efek glow dan gradient yang kompleks." },
-            { id: 7, title: "Glassmorphism Dashboard", category: "grade12", img: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800", likes: 77, desc: "Dashboard manajemen data yang menggunakan prinsip kedalaman visual melalui lapisan transparan dan blur." },
-            // Freelance
-            { id: 8, title: "Lunar Coffee Rebrand", category: "freelance", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800", likes: 104, desc: "Proyek komersial untuk kedai kopi lokal. Menciptakan suasana hangat namun modern yang tercermin dalam seluruh kemasan produk." },
-            { id: 9, title: "Crypto Genesis Logo", category: "freelance", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800", likes: 120, desc: "Logo untuk platform blockchain baru. Menggabungkan konsep rantai dan simbol 'G' yang dinamis." }
+            { id: 7, title: "Synthwave Mobile UI", category: "grade12", img: "https://images.unsplash.com/photo-1614850523296-e8c0a4ef336b?q=80&w=800", likes: 89, desc: "Eksplorasi antarmuka aplikasi pemutar musik dengan tema retro-futuristik. Menggunakan efek glow dan gradient yang kompleks." },
+            { id: 8, title: "Glassmorphism Dashboard", category: "grade12", img: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800", likes: 77, desc: "Dashboard manajemen data yang menggunakan prinsip kedalaman visual melalui lapisan transparan dan blur." },
+            { id: 9, title: "Glassmorphism Dashboard", category: "grade12", img: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800", likes: 77, desc: "Dashboard manajemen data yang menggunakan prinsip kedalaman visual melalui lapisan transparan dan blur." },
+            // Personal
+            { id: 10, title: "Lunar Coffee Rebrand", category: "freelance", img: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800", likes: 104, desc: "Proyek komersial untuk kedai kopi lokal. Menciptakan suasana hangat namun modern yang tercermin dalam seluruh kemasan produk." },
+            { id: 11, title: "Crypto Genesis Logo", category: "freelance", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800", likes: 120, desc: "Logo untuk platform blockchain baru. Menggabungkan konsep rantai dan simbol 'G' yang dinamis." },
+            { id: 12, title: "Crypto Genesis Logo", category: "freelance", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800", likes: 120, desc: "Logo untuk platform blockchain baru. Menggabungkan konsep rantai dan simbol 'G' yang dinamis." }
         ];
 
         let currentUser = { name: '', role: '' };
@@ -333,7 +336,7 @@
             const userVal = document.getElementById('usernameInput').value;
             const passVal = document.getElementById('passwordInput').value;
             if(!userVal) return alert("Silakan isi nama terlebih dahulu.");
-            if(currentUser.role === 'admin' && passVal !== 'admin123') return alert("Password Admin Salah!");
+            if(currentUser.role === 'admin' && passVal !== 'zaahbie09') return alert("Password Admin Salah!");
             
             currentUser.name = userVal;
             document.getElementById('loginOverlay').classList.add('hidden');
